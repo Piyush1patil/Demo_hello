@@ -20,21 +20,14 @@
                 <version>3.5.2</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <!-- Specify C as the language -->
+                    <!-- Specify C as the primary language -->
                     <libraries>
                         <library>
                             <type>executable</type>
                         </library>
                     </libraries>
-                    <cpp>
-                        <skip>true</skip>
-                    </cpp>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <!-- Add dependencies if needed -->
-    </dependencies>
 </project>
