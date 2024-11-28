@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>demo-c-project</artifactId>
+    <version>1.0.0</version>
+    <packaging>nar</packaging>
+
+    <name>Demo C Project</name>
+    <description>Build C project with Maven</description>
+
+    <build>
+        <plugins>
+            <!-- NAR Plugin for building native applications -->
+            <plugin>
+                <groupId>com.github.maven-nar</groupId>
+                <artifactId>nar-maven-plugin</artifactId>
+                <version>3.5.2</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <!-- Specify C as the language -->
+                    <libraries>
+                        <library>
+                            <type>executable</type>
+                        </library>
+                    </libraries>
+                    <cpp>
+                        <skip>true</skip>
+                    </cpp>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- Add dependencies if needed -->
+    </dependencies>
+</project>
