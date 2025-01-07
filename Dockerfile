@@ -5,7 +5,7 @@ FROM gcc:latest
 WORKDIR /app
 
 # Copy the C source files into the container
-COPY . .
+COPY Demo.c .
 
 # Compile the C program (replace 'your_program.c' with your actual source file)
 RUN gcc -o Demo Demo.c
